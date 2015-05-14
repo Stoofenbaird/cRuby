@@ -49,7 +49,7 @@ end
 
 app_map = {
 	'html' => 'chromium-browser -new-window --enable-plugins  --allow-outdated-plugins ',
-	'rb' => 'gvim',
+	'rb' => 'nano',
 	'jpg' => 'gimp'
 }
 
