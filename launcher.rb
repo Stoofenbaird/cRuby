@@ -48,8 +48,8 @@ unless ARGV.size > 0
 end
 
 app_map = {
-	'html' => 'chromium-browser -new-window --enable-plugins  --allow-outdated-plugins ',
-	'rb' => 'nano',
+	'html' => 'open /Applications/Chrome.app ',
+	'rb' => 'vim',
 	'jpg' => 'gimp'
 }
 
