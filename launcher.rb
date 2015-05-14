@@ -5,5 +5,9 @@
 #Example application to demonstrate some basic Ruby features
 #This code loads a given file into an associated application
 
+# Create a variable
 class Launcher
 end
+
+# Create an instance of the class Launcher
+launcher = Launcher.new
