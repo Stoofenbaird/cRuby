@@ -56,4 +56,9 @@ app_map = {
 l = Launcher.new app_map
 target = ARGV.join ' '
 l.run target 
+=begin
+Note: In terminal, I get a NameError: undefined locavariable or method 'launcher' for main:Object
+	from (irb):1
+	from /file_path/.rbenv/versions/2.2.2/bin/irb:11:in '<main>'
+=end
 
