@@ -3,7 +3,7 @@
 # source: http://ruby-doc.org/docs/Tutorial/part_02/conditionals.html
 
 # If/else conditional statements.  Order of if/else values is importamt.  FIrst true one will execute.
-
+puts "Determine fare based on age: \n"
 
 puts "How old are you?"
 age = gets.chomp.to_i
@@ -17,26 +17,3 @@ elsif age >= 14
 	else 
 		puts "Free"
 	end
-
-puts "\n\n"
-
-# Ascii order exercise.  Put in ASCIIbetical order - don't use an array.
-
-	item1 = '2' 
-	item2 = 'u'
-	item3 = 'A'
-	item4 = '4'
-	item5 = 'w'
-	item6 = 'f'
-	item7 = 'R'
-	item8 = 'y'
-
-	puts "Items: " + item1 + " ," + item2 + " ," + item3 + " ," + item4 + " ," + item5 + " ,"\
-		 + item6 + " ," + item7 + " ," + item8 + "."
-
-	
-
-		
-			
-
-
