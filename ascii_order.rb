@@ -14,11 +14,11 @@ puts "Make a program that accepts character input and " \
 
 	if user_char <= "0"
 		puts "Your character is before 0 in ASCII order."
-	elsif "9" < user_char  && user_char < "A"
+	elsif "9" <= user_char  && user_char <= "A"
 		puts "Your character is after 9 but before A in ASCII order."
-	elsif 'Z' < user_char && user_char < 'a'
+	elsif 'Z' <= user_char && user_char <= 'a'
 		puts "Your character is after Z but before a in ASCII order."
-	elsif 'z' < user_char
+	elsif 'z' <= user_char
 		puts "Your character is after z in ASCII order."
 	else
 		puts "Your character's ascii value is: " + user_char.ord.to_s

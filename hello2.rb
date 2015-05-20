@@ -1,4 +1,4 @@
-#! /usr/bin/ruby
+#!/usr/bin/ruby
 
 # source: http://ruby-doc.org/docs/Tutorial/part_02/conditionals.html
 

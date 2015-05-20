@@ -1,0 +1,14 @@
+#A Treehouse Ruby exercise
+# This file is a duplicate of the example file included in the Treehouse Workspaces for this exercise
+#The comment tags to the code below (lines 7 - 14) below have been added to retain its status as an example.
+#The actual file name should be contacts.yml.  Such a file would be constructed by the program.
+
+
+#  ---
+
+#  - !ruby/object:Contact
+#  phone_numbers: []
+#  address: []
+#  first_name: Jason
+#  middle_name: ''
+#  last_name: Seiffer
