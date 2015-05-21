@@ -13,3 +13,4 @@ describe "Deleting todo lists" do
 		expect(TodoList.count).to eq(0)
 	end
 end
+# from video 8 of treehouse course: Build a Todo List App with Rails 4
