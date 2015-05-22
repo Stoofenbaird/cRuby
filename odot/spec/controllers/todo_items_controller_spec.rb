@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TodoitemsController do
+describe TodoItemsController do
 
   describe "GET 'index'" do
     it "returns http success" do
