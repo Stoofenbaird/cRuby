@@ -22,6 +22,22 @@ describe User do
     it "requires a unique email" do
       expect(user).to validate_uniqueness_of(:email)
     end
+
   end
 
+  describe "#downcase_email" do
+    it "makes the email attribute lower case" do
+      user = User.new(valid_attributes.merge(email: "JASON@TEAMTREEHOUSE.COM"))
+      user.downcase_email
+      expect(user.email).to eq("jason@teamtreehouse.com")
+    end
+
+  it "downcases an email before saving" do
+    user = User.new(valid_attributes)
+    user.email = "MIKE@TEAMTREEHOUSE.COM"
+    expect(user.save).to be_true
+    expect(user.email).to eq("mike@teamtreehouse.com")
+
+    end
+  end
 end
