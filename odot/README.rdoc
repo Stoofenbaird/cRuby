@@ -1,4 +1,4 @@
 ODOT: A Treehouse tutorial from the Ruby and Rails courses.  First completed from the Build A Todo List With
-Rails sequnce.
+Rails sequence.
 
 Revisited in the User Athentication sequence.
