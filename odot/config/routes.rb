@@ -1,5 +1,5 @@
-Rails.application.routes.draw do
-  
+Odot::Application.routes.draw do
+    
 
   resources :users
   resources :todo_lists do
