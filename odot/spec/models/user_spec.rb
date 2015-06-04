@@ -5,7 +5,9 @@ describe User do
     {
       first_name: "Jason",
       last_name: "Seifer",
-      email: "jason@teamtreehouse.com"
+      email: "jason@teamtreehouse.com",
+      password: "treehouse1234",
+      password_confirmation: "treehouse1234"
     }
   }
   context "validations" do
@@ -28,6 +30,11 @@ describe User do
       expect(user).to validate_uniqueness_of(:email)
     end
 
+    it "requires the email address to look like an email" do 
+      user.email = "jason"
+      expect(user).to_not be_valid
+    end
+
   end
 
   describe "#downcase_email" do
@@ -41,7 +48,7 @@ describe User do
   it "downcases an email before saving" do
     user = User.new(valid_attributes)
     user.email = "MIKE@TEAMTREEHOUSE.COM"
-    expect(user.save).to be_true
+    expect(user.save).to be_truthy
     expect(user.email).to eq("mike@teamtreehouse.com")
 
     end
