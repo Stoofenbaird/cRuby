@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe UserSessionsController do
-
+  
   describe "GET 'new'" do
     it "returns http success" do
       get 'new'
