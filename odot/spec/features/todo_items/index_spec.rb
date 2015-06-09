@@ -6,8 +6,8 @@ describe "Viewing todo items" do
   before { sign_in user, password: 'treehouse1' }
 
   it "displays the title of the todo list" do
-   visit_todo_list(todo_list)
-  within("div.content h1") do
+    visit_todo_list(todo_list)
+    within("div.content h1") do
       expect(page).to have_content(todo_list.title)
     end
   end  
