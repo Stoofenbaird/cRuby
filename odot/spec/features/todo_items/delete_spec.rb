@@ -1,12 +1,13 @@
 require 'spec_helper'
 
 describe "Deleting todo items" do
-  let!(:todo_list) { TodoList.create(title: "Grocery list", description: "Groceries") }
+  let(:user) { todo_list.user }
+  let!(:todo_list) { create(:todo_list) }
   let!(:todo_item) { todo_list.todo_items.create(content: "Milk") }  
-  let(:user) { create(:user) }
   before { sign_in user, password: 'treehouse1' }
 
   it "is successful" do
+    pending "Adding delete link"
     visit_todo_list(todo_list)
     within "#todo_item_#{todo_item.id}" do
       click_link "Delete"

@@ -1,6 +1,18 @@
-<h1>Editing User</h1>
+<%= title "Account Settings" %>
 
-<%= render 'form' %>
+<%= form_for(@user, builder: FoundationFormBuilder) do |f| %>
+  <fieldset>
+    <legend>About You</legend>
+    <%= f.text_field :first_name %>
+    <%= f.text_field :last_name %>
+    <%= f.email_field :email %>
+  </fieldset>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+  <fieldset>
+    <legend>Change Your Password</legend>
+    <%= f.password_field :password %>
+    <%= f.password_field :password_confirmation %>
+  </fieldset>
+
+  <%= f.submit "Save" %>
+<% end %>
