@@ -14,7 +14,7 @@ class StatusesControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :redirect 
-    assert_redirected_to login_path
+    assert_redirected_to new_user_session_path
   end
 
   test "should create status" do
